@@ -2,6 +2,8 @@ const socket = io();
 const btnOn = document.querySelector("#onBtn");
 const btnOff = document.querySelector("#offBtn");
 
+let count = 0;
+
 function showStatus(count){
     if (count === 1) {
         btnOn.classList.add("active");
