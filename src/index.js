@@ -32,7 +32,8 @@ io.on('connection', (socket) => {
 });
 
 app.get('/status', (req, res) => {
-    res.end(JSON.stringify({"status":count}));
+    //res.end(JSON.stringify({"status":count}));
+    res.end(count+"");
 });
 
 server.listen(port, () => {
